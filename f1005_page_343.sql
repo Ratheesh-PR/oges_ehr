@@ -28,7 +28,7 @@ prompt APPLICATION 1005 - E_HR Pack
 -- Application Export:
 --   Application:     1005
 --   Name:            E_HR Pack
---   Date and Time:   09:19 Thursday February 5, 2026
+--   Date and Time:   09:22 Thursday February 5, 2026
 --   Exported By:     RATHEESH
 --   Flashback:       0
 --   Export Type:     Page Export
@@ -61,7 +61,7 @@ wwv_flow_imp_page.create_page(
 ,p_protection_level=>'C'
 ,p_page_component_map=>'18'
 ,p_last_updated_by=>'RATHEESH'
-,p_last_upd_yyyymmddhh24miss=>'20260205084207'
+,p_last_upd_yyyymmddhh24miss=>'20260205092155'
 );
 wwv_flow_imp_page.create_page_plug(
  p_id=>wwv_flow_imp.id(926302646259936446)
@@ -795,7 +795,7 @@ wwv_flow_imp_page.create_page_process(
 '            SELECT JV_ID INTO JV_PK FROM ERP_GL.JV WHERE JV_C_ID=:COMP AND JV_VNO=GA_VNO1;',
 '        END IF ;',
 '',
-'        -- INSERT INTO ERP_GL.ERROR_LOG_L VALUES(''TEST 127 P343_MEMBER_LIST:''||:P343_MEMBER_LIST_1);',
+'        INSERT INTO ERP_GL.ERROR_LOG_L VALUES(''TEST 127 P343_MEMBER_LIST:''||:P343_MEMBER_LIST_1);',
 '        IF :P343_MEMBER_LIST_1 IS NOT NULL THEN ',
 '            DELETE FROM ERP_GL.GA WHERE GA_C_ID=:COMP AND GA_VNO =GA_VNO1 AND GA_REF_COPY=''PAYROLL_POST'' AND GA_STAFF=:P343_MEMBER_LIST_1;',
 '            -- INSERT INTO ERP_GL.ERROR_LOG_L VALUES(''TEST 127 P343_MEMBER_LIST_1 INSIDE:''||:P343_MEMBER_LIST_1);',
